@@ -11,7 +11,40 @@
 		A205F70B2B7A63F900B70419 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A205F70A2B7A63F900B70419 /* ContentView.swift */; };
 		A205F70D2B7A63FA00B70419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A205F70C2B7A63FA00B70419 /* Assets.xcassets */; };
 		A205F7112B7A63FA00B70419 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A205F7102B7A63FA00B70419 /* Preview Assets.xcassets */; };
+		A205F7212B7A661800B70419 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A205F7202B7A661800B70419 /* NetworkExtension.framework */; };
+		A205F72A2B7A661800B70419 /* VpnExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A205F71E2B7A661800B70419 /* VpnExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A205F7342B7A90E700B70419 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A205F7202B7A661800B70419 /* NetworkExtension.framework */; };
+		A205F7472B7A95AE00B70419 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A205F7462B7A95A300B70419 /* libz.tbd */; };
+		A29704812B7AD384000EE100 /* OutlineVpn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29704802B7AD384000EE100 /* OutlineVpn.swift */; };
+		A29704832B7AD3CA000EE100 /* NETunnelProviderManager+Outline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29704822B7AD3CA000EE100 /* NETunnelProviderManager+Outline.swift */; };
+		A29704862B7ADB66000EE100 /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A205F7242B7A661800B70419 /* PacketTunnelProvider.m */; };
+		A29704932B7ADCD4000EE100 /* Tun2socks in Frameworks */ = {isa = PBXBuildFile; productRef = A29704922B7ADCD4000EE100 /* Tun2socks */; };
+		A29704982B7ADD41000EE100 /* OutlineTunnel in Frameworks */ = {isa = PBXBuildFile; productRef = A29704972B7ADD41000EE100 /* OutlineTunnel */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A205F7282B7A661800B70419 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A205F6FD2B7A63F900B70419 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A205F71D2B7A661800B70419;
+			remoteInfo = VpnExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A205F72E2B7A661800B70419 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A205F72A2B7A661800B70419 /* VpnExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A205F7052B7A63F900B70419 /* SampleCatalystVPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleCatalystVPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +53,16 @@
 		A205F70C2B7A63FA00B70419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A205F70E2B7A63FA00B70419 /* SampleCatalystVPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SampleCatalystVPN.entitlements; sourceTree = "<group>"; };
 		A205F7102B7A63FA00B70419 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A205F7192B7A64C200B70419 /* OutlineAppleLib */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = OutlineAppleLib; sourceTree = "<group>"; };
+		A205F71E2B7A661800B70419 /* VpnExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VpnExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A205F7202B7A661800B70419 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		A205F7232B7A661800B70419 /* PacketTunnelProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketTunnelProvider.h; sourceTree = "<group>"; };
+		A205F7242B7A661800B70419 /* PacketTunnelProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacketTunnelProvider.m; sourceTree = "<group>"; };
+		A205F7262B7A661800B70419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A205F7272B7A661800B70419 /* VpnExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VpnExtension.entitlements; sourceTree = "<group>"; };
+		A205F7462B7A95A300B70419 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A29704802B7AD384000EE100 /* OutlineVpn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlineVpn.swift; sourceTree = "<group>"; };
+		A29704822B7AD3CA000EE100 /* NETunnelProviderManager+Outline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NETunnelProviderManager+Outline.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +70,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A205F7342B7A90E700B70419 /* NetworkExtension.framework in Frameworks */,
+				A29704932B7ADCD4000EE100 /* Tun2socks in Frameworks */,
+				A205F7472B7A95AE00B70419 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A205F71B2B7A661800B70419 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A205F7212B7A661800B70419 /* NetworkExtension.framework in Frameworks */,
+				A29704982B7ADD41000EE100 /* OutlineTunnel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,7 +91,10 @@
 		A205F6FC2B7A63F900B70419 = {
 			isa = PBXGroup;
 			children = (
+				A205F7192B7A64C200B70419 /* OutlineAppleLib */,
 				A205F7072B7A63F900B70419 /* SampleCatalystVPN */,
+				A205F7222B7A661800B70419 /* VpnExtension */,
+				A205F71F2B7A661800B70419 /* Frameworks */,
 				A205F7062B7A63F900B70419 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				A205F7052B7A63F900B70419 /* SampleCatalystVPN.app */,
+				A205F71E2B7A661800B70419 /* VpnExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				A205F7082B7A63F900B70419 /* SampleCatalystVPNApp.swift */,
+				A29704822B7AD3CA000EE100 /* NETunnelProviderManager+Outline.swift */,
+				A29704802B7AD384000EE100 /* OutlineVpn.swift */,
 				A205F70A2B7A63F900B70419 /* ContentView.swift */,
 				A205F70C2B7A63FA00B70419 /* Assets.xcassets */,
 				A205F70E2B7A63FA00B70419 /* SampleCatalystVPN.entitlements */,
@@ -69,6 +130,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A205F71F2B7A661800B70419 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A205F7462B7A95A300B70419 /* libz.tbd */,
+				A205F7202B7A661800B70419 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A205F7222B7A661800B70419 /* VpnExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A205F7232B7A661800B70419 /* PacketTunnelProvider.h */,
+				A205F7242B7A661800B70419 /* PacketTunnelProvider.m */,
+				A205F7262B7A661800B70419 /* Info.plist */,
+				A205F7272B7A661800B70419 /* VpnExtension.entitlements */,
+			);
+			path = VpnExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +160,39 @@
 				A205F7012B7A63F900B70419 /* Sources */,
 				A205F7022B7A63F900B70419 /* Frameworks */,
 				A205F7032B7A63F900B70419 /* Resources */,
+				A205F72E2B7A661800B70419 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A205F7292B7A661800B70419 /* PBXTargetDependency */,
+			);
+			name = SampleCatalystVPN;
+			packageProductDependencies = (
+				A29704922B7ADCD4000EE100 /* Tun2socks */,
+			);
+			productName = SampleCatalystVPN;
+			productReference = A205F7052B7A63F900B70419 /* SampleCatalystVPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A205F71D2B7A661800B70419 /* VpnExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A205F72B2B7A661800B70419 /* Build configuration list for PBXNativeTarget "VpnExtension" */;
+			buildPhases = (
+				A205F7332B7A90B800B70419 /* Sources */,
+				A205F71B2B7A661800B70419 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SampleCatalystVPN;
-			productName = SampleCatalystVPN;
-			productReference = A205F7052B7A63F900B70419 /* SampleCatalystVPN.app */;
-			productType = "com.apple.product-type.application";
+			name = VpnExtension;
+			packageProductDependencies = (
+				A29704972B7ADD41000EE100 /* OutlineTunnel */,
+			);
+			productName = VpnExtension;
+			productReference = A205F71E2B7A661800B70419 /* VpnExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +205,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					A205F7042B7A63F900B70419 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					A205F71D2B7A661800B70419 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -118,6 +226,7 @@
 			projectRoot = "";
 			targets = (
 				A205F7042B7A63F900B70419 /* SampleCatalystVPN */,
+				A205F71D2B7A661800B70419 /* VpnExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -140,11 +249,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				A205F70B2B7A63F900B70419 /* ContentView.swift in Sources */,
+				A29704812B7AD384000EE100 /* OutlineVpn.swift in Sources */,
+				A29704832B7AD3CA000EE100 /* NETunnelProviderManager+Outline.swift in Sources */,
 				A205F7092B7A63F900B70419 /* SampleCatalystVPNApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A205F7332B7A90B800B70419 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A29704862B7ADB66000EE100 /* PacketTunnelProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A205F7292B7A661800B70419 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A205F71D2B7A661800B70419 /* VpnExtension */;
+			targetProxy = A205F7282B7A661800B70419 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A205F7122B7A63FA00B70419 /* Debug */ = {
@@ -199,12 +326,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = I;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -254,10 +385,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = I;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -267,9 +402,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SampleCatalystVPN/SampleCatalystVPN.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SampleCatalystVPN/Preview Content\"";
+				DEVELOPMENT_TEAM = QT8Z3Q9V3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -282,18 +419,20 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.outline.macos.client.SampleCatalystVPN;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = org.outline.ios.client;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = org.outline.macos.client;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -303,9 +442,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SampleCatalystVPN/SampleCatalystVPN.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SampleCatalystVPN/Preview Content\"";
+				DEVELOPMENT_TEAM = QT8Z3Q9V3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -318,18 +459,83 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.outline.macos.client.SampleCatalystVPN;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = org.outline.ios.client;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = org.outline.macos.client;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A205F72C2B7A661800B70419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VpnExtension/VpnExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QT8Z3Q9V3A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VpnExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VpnExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.outline.ios.client.VpnExtension;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = org.outline.macos.client.VpnExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		A205F72D2B7A661800B70419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VpnExtension/VpnExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QT8Z3Q9V3A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VpnExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VpnExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.outline.ios.client.VpnExtension;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = org.outline.macos.client.VpnExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -354,7 +560,27 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A205F72B2B7A661800B70419 /* Build configuration list for PBXNativeTarget "VpnExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A205F72C2B7A661800B70419 /* Debug */,
+				A205F72D2B7A661800B70419 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A29704922B7ADCD4000EE100 /* Tun2socks */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Tun2socks;
+		};
+		A29704972B7ADD41000EE100 /* OutlineTunnel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OutlineTunnel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A205F6FD2B7A63F900B70419 /* Project object */;
 }
