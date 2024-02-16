@@ -13,8 +13,6 @@
 		A205F7112B7A63FA00B70419 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A205F7102B7A63FA00B70419 /* Preview Assets.xcassets */; };
 		A205F7212B7A661800B70419 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A205F7202B7A661800B70419 /* NetworkExtension.framework */; };
 		A205F72A2B7A661800B70419 /* VpnExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A205F71E2B7A661800B70419 /* VpnExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A205F7342B7A90E700B70419 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A205F7202B7A661800B70419 /* NetworkExtension.framework */; };
-		A205F7472B7A95AE00B70419 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A205F7462B7A95A300B70419 /* libz.tbd */; };
 		A29704812B7AD384000EE100 /* OutlineVpn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29704802B7AD384000EE100 /* OutlineVpn.swift */; };
 		A29704832B7AD3CA000EE100 /* NETunnelProviderManager+Outline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29704822B7AD3CA000EE100 /* NETunnelProviderManager+Outline.swift */; };
 		A29704862B7ADB66000EE100 /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A205F7242B7A661800B70419 /* PacketTunnelProvider.m */; };
@@ -70,9 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A205F7342B7A90E700B70419 /* NetworkExtension.framework in Frameworks */,
 				A29704932B7ADCD4000EE100 /* Tun2socks in Frameworks */,
-				A205F7472B7A95AE00B70419 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

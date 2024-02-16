@@ -5,7 +5,6 @@
 //  Created by Sander Bruens on 2/12/24.
 //
 
-import NetworkExtension
 import SwiftUI
 
 struct ContentView: View {
